@@ -13,15 +13,15 @@ int totalCount;
 
 
 void setup(){
+  ui = new ControlP5(this);
+  
   frameRate(30);
   size(512,512);
   sans = createFont("comic.ttf",24);
   textFont(sans);
   textAlign(CENTER);
   fill(29, 54, 35);
-  
-  
-  ui = new ControlP5(this);
+
   
   buttonParents = ui.addButton("buttonParents")
                  .setPosition(128,128)
